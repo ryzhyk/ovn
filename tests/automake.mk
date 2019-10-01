@@ -199,7 +199,8 @@ tests_ovstest_LDADD = $(OVS_LIBDIR)/libopenvswitch.la lib/libovn.la
 CHECK_PYFILES = \
 	tests/test-l7.py \
 	tests/stableid.py \
-	tests/uuidfilt.py
+	tests/uuidfilt.py \
+	tests/stableid.py
 
 EXTRA_DIST += $(CHECK_PYFILES)
 PYCOV_CLEAN_FILES += $(CHECK_PYFILES:.py=.py,cover) .coverage
